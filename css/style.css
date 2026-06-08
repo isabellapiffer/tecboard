@@ -26,7 +26,8 @@
 
 
 body {
-    background-color: #0E1014;
+    background-color: #fff;
+    color: #000;
 
 }
 
@@ -57,7 +58,7 @@ p { font-family: "Poppins", sans-serif;
 }
 
 h1, p, a{
-    color: #ffffff
+    color: #000;
 }
 
 a {
