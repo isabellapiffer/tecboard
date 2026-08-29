@@ -1,0 +1,17 @@
+.lista-opcoes {
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #4a4949;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+  padding: 8px 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lista-opcoes option {
+  background-color: #212121;
+  color: #ffffff;
+}
