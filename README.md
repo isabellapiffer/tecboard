@@ -2,7 +2,7 @@
 
 Mural de eventos de tecnologia feito em **React**. Você cadastra um evento (nome, imagem de capa, data e tema) e ele aparece na hora no mural, agrupado pelo tema certo: Front-End, Back-End, DevOps, Inteligência Artificial, Data Science ou Cloud.
 
-**🔗 Acesse:** _(coloque aqui o link do Vercel)_
+**🔗 Acesse:** https://tecboard-omega-olive.vercel.app
 
 <!-- Coloque um print da tela aqui: arraste a imagem para o editor do GitHub e ele gera o link -->
 
