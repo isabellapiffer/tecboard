@@ -62,13 +62,3 @@ npm run dev
 ```
 
 Depois é só abrir o endereço que aparecer no terminal (normalmente `http://localhost:5173`).
-
-## Próximos passos
-
-- [ ] Salvar os eventos no navegador (`localStorage`) para não sumirem ao recarregar
-- [ ] Validar os campos do formulário antes de criar o evento
-- [ ] Permitir excluir um evento
-
----
-
-Feito por [Isabella Piffer](https://github.com/isabellapiffer) 💗
