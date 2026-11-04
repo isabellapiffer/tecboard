@@ -1,16 +1,74 @@
-# React + Vite
+# 📌 TecBoard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mural de eventos de tecnologia feito em **React**. Você cadastra um evento (nome, imagem de capa, data e tema) e ele aparece na hora no mural, agrupado pelo tema certo: Front-End, Back-End, DevOps, Inteligência Artificial, Data Science ou Cloud.
 
-Currently, two official plugins are available:
+**🔗 Acesse:** _(coloque aqui o link do Vercel)_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<!-- Coloque um print da tela aqui: arraste a imagem para o editor do GitHub e ele gera o link -->
 
-## React Compiler
+> Projeto desenvolvido durante a formação de React da Alura.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Formulário para criar eventos com nome, capa, data e tema
+- Eventos agrupados automaticamente por tema
+- Temas sem eventos ficam escondidos, então o mural só mostra o que tem conteúdo
+- Data exibida no formato brasileiro (dd/mm/aaaa)
+
+## Tecnologias
+
+- React 19
+- Vite
+- JavaScript (ES Modules)
+- CSS separado por componente
+- ESLint
+
+## O que pratiquei neste projeto
+
+- **Componentização:** a interface é dividida em 10 componentes pequenos e reutilizáveis
+- **Props e `children`:** componentes como `Label`, `Botao` e `CampoDeFormulario` recebem conteúdo de fora
+- **Estado com `useState`:** a lista de eventos vive no `App` e é atualizada sem recarregar a página
+- **Comunicação entre componentes:** o formulário avisa o `App` quando um evento é criado, por uma função recebida via props (`aoSubmeter`)
+- **Formulários no React 19:** uso da prop `action` com `FormData` para ler os campos
+- **Renderização de listas:** `map`, `filter` e `some` para montar o mural por tema
+
+## Estrutura
+
+```
+src/
+├── App.jsx                     # estado dos eventos e montagem do mural
+└── componentes/
+    ├── Banner/                 # imagem de destaque no topo
+    ├── FormularioDeEvento/     # formulário de criação de eventos
+    ├── TituloFormulario/
+    ├── CampoDeFormulario/      # agrupa label + campo
+    ├── CampoDeEntrada/         # input reutilizável
+    ├── Label/
+    ├── ListaSuspensa/          # select com os temas
+    ├── Botao/
+    ├── Tema/                   # título de cada seção do mural
+    └── CardEventos/            # card de cada evento
+```
+
+## Como rodar
+
+```bash
+git clone https://github.com/isabellapiffer/tecboard.git
+cd tecboard
+npm install
+npm run dev
+```
+
+Depois é só abrir o endereço que aparecer no terminal (normalmente `http://localhost:5173`).
+
+## Próximos passos
+
+- [ ] Salvar os eventos no navegador (`localStorage`) para não sumirem ao recarregar
+- [ ] Validar os campos do formulário antes de criar o evento
+- [ ] Permitir excluir um evento
+
+---
+
+Feito por [Isabella Piffer](https://github.com/isabellapiffer) 💗
